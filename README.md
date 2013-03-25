@@ -1,6 +1,6 @@
 # RailsAutocomplete
 
-TODO: Write a gem description
+A hassle-free autocomplete for Rails 3.2 using Twitter bootstrap.
 
 ## Installation
 
@@ -16,9 +16,27 @@ Or install it yourself as:
 
     $ gem install rails_autocomplete
 
+Then you need to add the following line to your application.js:
+
+    //= require rails_autocomplete
+
 ## Usage
 
-TODO: Write usage instructions here
+Assuming you have a Post model where you want to autocomplete posts based on their title field:
+
+
+Add the following to app/views/posts/_form.html.erb:
+
+    <%= f.autocomplete_field :post, autocomplete_posts_path %>
+
+app/controllers/posts_controller.rb:
+
+    def autocomplete
+      @posts = Post.autocomplete(:name, params[:q])
+      respond_to do |format|
+        format.json { render json: @posts }
+      end
+    end
 
 ## Contributing
 
