@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rayasocialmedia/rails_autocomplete.png?branch=master)](https://travis-ci.org/rayasocialmedia/rails_autocomplete)
+
 # RailsAutocomplete
 
 A hassle-free autocomplete for Rails 3.2 using Twitter bootstrap.
