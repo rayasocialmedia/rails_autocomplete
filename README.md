@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/rayasocialmedia/rails_autocomplete.png?branch=master)](https://travis-ci.org/rayasocialmedia/rails_autocomplete)
+[![Coverage Status](https://coveralls.io/repos/rayasocialmedia/rails_autocomplete/badge.png?branch=master)](https://coveralls.io/r/rayasocialmedia/rails_autocomplete)
+
 
 # RailsAutocomplete
 
