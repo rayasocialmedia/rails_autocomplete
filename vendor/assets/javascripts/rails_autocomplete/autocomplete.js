@@ -24,7 +24,7 @@ $(function() {
     },
     updater: function(item) {
         selectedItem = map[item].id;
-        $('input[data-autocomplete-child=' + $(this)[0].$element.data('autocomplete-parent') + ']').attr('value', selectedItem);
+        $('input[data-autocomplete-child=' + $(this)[0].$element.data('autocomplete-parent') + ']').attr('value', selectedItem).trigger("autocomplete", map[item]);
         return item;
     }
   });

@@ -42,6 +42,15 @@ app/controllers/posts_controller.rb:
       end
     end
 
+## Triggers
+
+When a text field is autocompleted, it triggers an `autocomplete` event, it also passes the data that has been autocompleted, both `id` and `value`
+
+    $("#input").on("autocomplete", function(event, data){
+        console.log("Autocompleted id is " + data.id);
+        console.log("Autocompleted value is "+ data.value);
+    });
+
 ## Contributing
 
 Please see CONTRIBUTING.md for details.
